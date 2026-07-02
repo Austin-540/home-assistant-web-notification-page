@@ -26,13 +26,13 @@
         const title = GetURLParameter("title");
         const content = GetURLParameter("content");
 
-        if (title === null) {
+        if (title === undefined) {
             document.getElementById("title").textContent = "No title provided";
         } else {
             document.getElementById("title").textContent = title;
         }
 
-        if (content === null) {
+        if (content === undefined) {
             document.getElementById("content").textContent = "No content provided";
         } else {
             document.getElementById("content").textContent = content;
